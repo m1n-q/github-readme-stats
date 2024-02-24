@@ -129,7 +129,7 @@ const statsFetcher = async ({
       login: username,
       first: 100,
       after: endCursor,
-      ownerAffiliations: ownerAffiliations,
+      ownerAffiliations,
       includeMergedPullRequests,
       includeDiscussions,
       includeDiscussionsAnswers,
@@ -217,6 +217,7 @@ const totalCommitsFetcher = async (username) => {
  * @param {string} username GitHub username.
  * @param {boolean} include_all_commits Include all commits.
  * @param {string[]} exclude_repo Repositories to exclude.
+ * @param {string[]} ownerAffiliations Owner affiliations.
  * @param {boolean} include_merged_pull_requests Include merged pull requests.
  * @param {boolean} include_discussions Include discussions.
  * @param {boolean} include_discussions_answers Include discussions answers.

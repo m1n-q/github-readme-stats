@@ -62,6 +62,7 @@ const fetcher = (variables, token) => {
  *
  * @param {string} username GitHub username.
  * @param {string[]} exclude_repo List of repositories to exclude.
+ * @param {string[]} ownerAffiliations Owner affiliations.
  * @param {number} size_weight Weightage to be given to size.
  * @param {number} count_weight Weightage to be given to count.
  * @returns {Promise<TopLangData>} Top languages data.

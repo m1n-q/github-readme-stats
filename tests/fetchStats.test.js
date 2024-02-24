@@ -382,7 +382,15 @@ describe("Test fetchStats", () => {
   });
 
   it("should fetch additional stats when it requested", async () => {
-    let stats = await fetchStats("anuraghazra", false, [], true, true, true);
+    let stats = await fetchStats(
+      "anuraghazra",
+      false,
+      [],
+      [],
+      true,
+      true,
+      true,
+    );
     const rank = calculateRank({
       all_commits: false,
       commits: 100,
